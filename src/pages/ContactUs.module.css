@@ -1,0 +1,87 @@
+/* This is the div around the entire component */
+.contactUsOuterContainer {
+    /* border: 1px solid red; */
+    margin-top: 10%;
+    padding: 20px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+}
+
+/* This is the div around the name section */
+.nameContainer {
+    /* border: 1px solid blue; */
+    padding: 5px;
+}
+
+/* This is the direct styling of the name label */
+.nameLabel {
+    /* border: 1px solid green; */
+}
+
+/* This is the direct styling of the name input */
+.nameInput {
+    /* border: 1px solid orangered; */
+    width: 100%;
+}
+
+/* This is the div around the email section */
+.emailContainer {
+    /* border: 1px solid blue; */
+    padding: 5px;
+}
+
+/* This is the direct styling of the email label */
+.emailLabel {
+    /* border: 1px solid green; */
+}
+
+/* This is the direct styling of the email input */
+.emailInput {
+    /* border: 1px solid orangered; */
+    width: 100%;
+}
+
+/* This is the div around the message section */
+
+.messageContainer {
+    /* border: 1px solid blue; */
+    padding: 5px;
+    padding-top: 25px;
+}
+
+/* This is the div around the message label */
+.messageLabel {
+    /* border: 1px solid green; */
+    
+}
+
+/* This is the direct styling of the message input */
+.messageInput {
+    /* border: 1px solid orangered; */
+    height: 100px;
+    width: 100%;
+    resize: vertical;
+}
+
+/* This is the direct styling of the div surrounding the submit button */
+.submitContainer {
+    /* border: 1px solid blue; */
+    padding: 5px;
+    text-align: center;
+}
+/* This is the direct styling of the submit input */
+
+.submitInput {
+    /* border: 1px solid orangered; */
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.submitInput:hover {
+    background-color: #1888ff;
+    transition: all 0.2s ease-out;
+}
