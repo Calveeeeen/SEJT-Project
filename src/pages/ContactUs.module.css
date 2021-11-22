@@ -1,6 +1,7 @@
 /* This is the div around the entire component */
 .contactUsOuterContainer {
-    /* border: 1px solid red; */
+    border: 3px solid #2A52BE;
+    background: grey;
     margin-top: 10%;
     padding: 20px;
     width: 50%;
@@ -12,6 +13,8 @@
 .nameContainer {
     /* border: 1px solid blue; */
     padding: 5px;
+    color: #2a52be;
+    font-weight: bold;
 }
 
 /* This is the direct styling of the name label */
@@ -29,6 +32,8 @@
 .emailContainer {
     /* border: 1px solid blue; */
     padding: 5px;
+    color: white;
+    font-weight: bold;
 }
 
 /* This is the direct styling of the email label */
@@ -48,6 +53,8 @@
     /* border: 1px solid blue; */
     padding: 5px;
     padding-top: 25px;
+    color: white;
+    font-weight: bold;
 }
 
 /* This is the div around the message label */
