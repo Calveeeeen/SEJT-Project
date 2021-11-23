@@ -1,19 +1,24 @@
+.Fullpage{
+    background-color: linear-gradient(#473082,#408FA2);
+    border: 2px solid #1D50D6;
+}
 /* This is the div around the entire component */
 .contactUsOuterContainer {
-    border: 3px solid #2A52BE;
-    background: grey;
+    /* border: 3px solid #1D50D6; */
+    background: linear-gradient(#473082,#408FA2);
     margin-top: 10%;
     padding: 20px;
     width: 50%;
     position: absolute;
     left: 25%;
+    /* box-shadow:5px 10px grey; */
 }
 
 /* This is the div around the name section */
 .nameContainer {
     /* border: 1px solid blue; */
     padding: 5px;
-    color: #2a52be;
+    color: white;
     font-weight: bold;
 }
 
@@ -26,6 +31,8 @@
 .nameInput {
     /* border: 1px solid orangered; */
     width: 100%;
+    height: 30px;
+    font-size: large;
 }
 
 /* This is the div around the email section */
@@ -45,6 +52,8 @@
 .emailInput {
     /* border: 1px solid orangered; */
     width: 100%;
+    height: 30px;
+    font-size: large;
 }
 
 /* This is the div around the message section */
@@ -69,26 +78,47 @@
     height: 100px;
     width: 100%;
     resize: vertical;
+    font-size: large;
+    font-family: sans-serif;
 }
 
 /* This is the direct styling of the div surrounding the submit button */
 .submitContainer {
     /* border: 1px solid blue; */
     padding: 5px;
+    padding-top: 20px;
     text-align: center;
 }
 /* This is the direct styling of the submit input */
 
 .submitInput {
     /* border: 1px solid orangered; */
-    background-color: black;
+    background-color: #1D50D6;
     color: white;
+    font-weight: bold;
     font-family: sans-serif;
-    height: 30px;
-    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
 }
 
 .submitInput:hover {
-    background-color: #1888ff;
+    background-color: turquoise;
+    color: black;
     transition: all 0.2s ease-out;
+}
+
+.heading{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+.description{
+    color: white;
+    font-size:14px;
+    text-align: center;
+    padding-bottom: 5px;
 }

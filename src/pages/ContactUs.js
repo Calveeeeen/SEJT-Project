@@ -20,6 +20,17 @@ const ContactUs = (props) => {
   return (
     <div className={styles.contactUsOuterContainer}>
       <form onSubmit={handleSubmitForms}>
+        <div className = {styles.heading}>
+        <label>
+          Contact Us
+          </label>
+        </div>
+        <div className = {styles.description}>
+        <label>
+            Got a question? We'd love to hear from you. Send us a message and we will respond as soon as possible. 
+        </label>
+        </div>
+         
       <div className={styles.nameContainer}>
           <label className={styles.nameLabel}>
             Name:
