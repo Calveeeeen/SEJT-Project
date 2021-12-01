@@ -1,17 +1,22 @@
+
 .Fullpage{
-    background-color: linear-gradient(#473082,#408FA2);
-    border: 2px solid #1D50D6;
+    background: linear-gradient(#473082,#408FA2);
+    position: relative;
+    min-height: 100vh;
+    /* border: 3px linear-gradient(#473082,#408FA2) */
 }
 /* This is the div around the entire component */
 .contactUsOuterContainer {
-    /* border: 3px solid #1D50D6; */
+    /* border: 2px solid blue; */
     background: linear-gradient(#473082,#408FA2);
     margin-top: 10%;
     padding: 20px;
     width: 50%;
+    /* max-width: 500px; */
     position: absolute;
-    left: 25%;
-    /* box-shadow:5px 10px grey; */
+    left:25%;
+    box-shadow: 6px 10px 10px lightgrey;
+    /* box-shadow: (width,height,blur color)*/
 }
 
 /* This is the div around the name section */

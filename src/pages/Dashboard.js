@@ -1,8 +1,12 @@
 import React from 'react';
+import SideBar from '../components/SideBar';
+import ContactUs from './ContactUs';
 
 function Dashboard(){
     return (
-        <h1> hello Dashboard </h1>
+        <div>
+            <SideBar />
+        </div> 
     )
 }
 
