@@ -1,10 +1,14 @@
 .SideBarContainer{
-    max-width:20%;
-    border: 3px solid blue
+    max-width:250px;
+    position: flex;
+    /* bottom: 0;
+    left: 0;
+    top: 8.5%; */
+    border: 3px solid blue;
+    height: 100vh;
 }
 
 .filtersTitle{
-    
     max-width: 5%;
     font-size: 30px;
     font-weight: bold;
@@ -12,12 +16,28 @@
 }
 
 .checkBoxContainer{
-
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .Slider{
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
     max-width: 80%;
     align-self: center;
     text-align: center;
     font-weight: bold;
+}
+
+.SearchboxContainer{
+}
+
+.Searchbox{
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
