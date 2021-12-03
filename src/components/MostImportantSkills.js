@@ -5,7 +5,7 @@ import styles from './MostImportantSkills.module.css';
 
 //use the following commented out code to generate the list from backened
     // const numbers = props.numbers;
-    const skills = ['c++', 'python','java','javascript', 'c#','ruby']
+    const skills = ['c++', 'python','java','javascript', 'c#','ruby','aws']
     const listItems = skills.map((skill,i) =>
       <li key={i.toString()/*.toString()*/}>
         {skill}
@@ -21,6 +21,7 @@ import styles from './MostImportantSkills.module.css';
 
 const MostImportantSkills = ()=> {
     return (
+        // this is the div for the container most important skills.
         <div className={styles.mostImportantSkillsContainer}>
             {/*This is the div for the Title for the most important skills*/ }
             <div className={styles.Title}>
