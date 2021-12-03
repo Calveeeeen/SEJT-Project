@@ -1,6 +1,9 @@
 .mostImportantSkillsContainer{
     border: 3px solid orange;
     max-height: 50vh;
+    margin: 10px;
+    background: white;
+    box-shadow: 6px 10px 10px lightgrey;
 }
 
 .Title{
@@ -9,6 +12,6 @@
 }
 
 .skillsList{
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
 }
