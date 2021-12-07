@@ -6,7 +6,13 @@
     box-shadow: 6px 10px 10px lightgrey;
 }
 
+/* this doesn't do anything as of right now. Can't figure out how to edit the font */
 .ComparisonList{
     font-weight: bold;
     font-size: 30px;
+}
+
+.AutocompleteLabel{
+    font-weight: bold;
+    color: solid red;
 }
