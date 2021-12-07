@@ -74,7 +74,7 @@ const SideBar = () => {
                         className={styles.Searchbox}
                         disablePortal
                         id="locationsAvailable"
-                        options={[]}
+                        options={['New York, NY', 'Los Angeles, CA','Chicago, IL','Seattle, WA', 'San Francisco, CA', 'Austin, TX', 'Las Vegas, NV' ]}
                         sx={{ width: 300 }}
                         renderInput={(params) => <TextField {...params} label="Location" />}
                     />
@@ -82,7 +82,7 @@ const SideBar = () => {
                         className={styles.Searchbox}
                         disablePortal
                         id="codingLanguagesAvailable"
-                        options={[]}
+                        options={['C++', 'Python','Java','Javascript', 'C#','Ruby']}
                         sx={{ width: 300 }}
                         renderInput={(params) => <TextField {...params} label="Coding languages" />}
                     />
@@ -90,7 +90,7 @@ const SideBar = () => {
                         className={styles.Searchbox}
                         disablePortal
                         id="skillsAvailable"
-                        options={[]}
+                        options={['Node.js', 'Microsoft office', 'React', 'React Native', 'SQL', 'Firebase', 'Figma', 'AWS']}
                         sx={{ width: 300 }}
                         renderInput={(params) => <TextField {...params} label="Skills" />}
                     />

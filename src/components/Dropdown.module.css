@@ -1,0 +1,12 @@
+.DropdownContainer{
+    background: white;
+    border: 3px solid green;
+    max-height: 50vh;
+    margin: 10px;
+    box-shadow: 6px 10px 10px lightgrey;
+}
+
+.ComparisonList{
+    font-weight: bold;
+    font-size: 30px;
+}
