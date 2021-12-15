@@ -20,6 +20,7 @@ const Dropdown = () => {
                 <TextField 
                 {...params} 
                 label="Comparison"
+                //not using the styling on the bottom because it's causing more problems.
                 // inputProps={{style: {fontSize:20}}} 
                 // InputLabelProps={{style: {fontSize: 20}}}
                 />}

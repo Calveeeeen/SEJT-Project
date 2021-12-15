@@ -11,8 +11,10 @@ import Autocomplete from '@mui/material/Autocomplete';
 
 
 
-const SideBar = () => {
 
+const SideBar = () => {
+    var info = require('../Data.json');
+    console.log(info.data.techRoot.skills[0])
     const [value, setValue] = React.useState([35000, 300000]);
     function valuetext(value) {
         return `${value}$`;
@@ -82,7 +84,7 @@ const SideBar = () => {
                         className={styles.Searchbox}
                         disablePortal
                         id="codingLanguagesAvailable"
-                        options={['C++', 'Python','Java','Javascript', 'C#','Ruby']}
+                        options={info.data.techRoot.skills.keys()}
                         sx={{ width: 300 }}
                         renderInput={(params) => <TextField {...params} label="Coding languages" />}
                     />
