@@ -7,25 +7,30 @@ import Checkbox from '@mui/material/Checkbox';
 import Slider from '@mui/material/Slider';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-
-
+import  {namesExtractor, valuesExtractor, locationExtractor} from './dataParser';
 
 
 
 const SideBar = () => {
-    var info = require('../Data.json');
-    console.log(info.data.techRoot.skills[0])
+    // these variables are used to call the extracted data from dataParser.js
+    var skillNames = namesExtractor();
+    var locationNames = locationExtractor();
+    // the following const allows us to set the minimum and maximum for the slider values.
     const [value, setValue] = React.useState([35000, 300000]);
+    //this function allows us to add the dollar sign in front of the minimum and maximum values for the slider.
     function valuetext(value) {
         return `${value}$`;
     }
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+    // this displays all of our components.
     return (
         <div>
+            {/* container for the sidebar components */}
             <div className={styles.SideBarContainer}>
                 <div xs={12} className={styles.filtersTitle}>
+                    {/* filters label */}
                     <label>
                         FILTERS
                     </label>
@@ -33,6 +38,7 @@ const SideBar = () => {
                 
                 {/* This is the container for the checkbox filters */}
                 <div className={styles.checkBoxContainer}>
+                    {/* contains the checkbox and the labels for the checkbox */}
                     <FormGroup>
                         <FormControlLabel control={<Checkbox defaultChecked />} label="Full Time" />
                         <FormControlLabel control={<Checkbox defaultChecked />} label="Part Time" />
@@ -44,9 +50,10 @@ const SideBar = () => {
                     </FormGroup>
                 </div>
 
-                {/*this is the container for the slider filter for salary*/}
+                {/*this is the container for the slider filter for salary.*/}
                 <div className={styles.Slider}>
                     <div>
+                        {/* Salary label on top of the slider */}
                         <label>
                             Salary
                         </label>
@@ -70,32 +77,33 @@ const SideBar = () => {
                     </FormGroup>
                 </div>
 
-                {/*this is the container for the search boxes*/}
-                <div className={styles.SearchboxContainer}>
+                {/*this is the container for the filter boxes*/}
+                <div className={styles.filterBoxContainer}>
                     <Autocomplete 
-                        className={styles.Searchbox}
+                        className={styles.filterBox}
                         disablePortal
                         id="locationsAvailable"
-                        options={['New York, NY', 'Los Angeles, CA','Chicago, IL','Seattle, WA', 'San Francisco, CA', 'Austin, TX', 'Las Vegas, NV' ]}
+                        options={locationNames}
                         sx={{ width: 300 }}
                         renderInput={(params) => <TextField {...params} label="Location" />}
                     />
                     <Autocomplete 
-                        className={styles.Searchbox}
+                        className={styles.filterBox}
                         disablePortal
                         id="codingLanguagesAvailable"
-                        options={info.data.techRoot.skills.keys()}
+                        options={skillNames}
                         sx={{ width: 300 }}
-                        renderInput={(params) => <TextField {...params} label="Coding languages" />}
+                        renderInput={(params) => <TextField {...params} label="Skills" />}
                     />
-                    <Autocomplete 
+                    {/* combining the skills with coding languages dropdown*/}
+                    {/* <Autocomplete 
                         className={styles.Searchbox}
                         disablePortal
                         id="skillsAvailable"
                         options={['Node.js', 'Microsoft office', 'React', 'React Native', 'SQL', 'Firebase', 'Figma', 'AWS']}
                         sx={{ width: 300 }}
                         renderInput={(params) => <TextField {...params} label="Skills" />}
-                    />
+                    /> */}
                 </div>
             </div>
         </div >

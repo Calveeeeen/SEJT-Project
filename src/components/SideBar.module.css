@@ -34,10 +34,10 @@
     font-weight: bold;
 }
 
-.SearchboxContainer{
+.filterBoxContainer{
 }
 
-.Searchbox{
+.filterBox{
     max-width: 80%;
     display: block;
     margin-left: auto;

@@ -5,6 +5,7 @@ import MostImportantSkills from '../components/MostImportantSkills';
 import styles from './Dashboard.module.css'
 import Dropdown from '../components/Dropdown'
 
+
 function Dashboard(){
     return (
         <div className={styles.DashboardHomepage}>
