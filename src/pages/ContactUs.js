@@ -5,6 +5,7 @@ const ContactUs = (props) => {
   const handleSubmitForms = () => {
     // Usually you would do field validation &
     // send this to a rest endpoint to the back end here.
+    // this is to connect an email address that we can use to communicate with the users.
     console.log(name);
     console.log(email);
     console.log(message);

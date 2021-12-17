@@ -34,4 +34,16 @@ const locationExtractor = function () {
 
     return temp;
 }
-export { valuesExtractor, namesExtractor, locationExtractor };
+//extracts all the names of the company's that have jobs available
+const companyExtractor = function () {
+    let temp = [];
+
+    for (let key of Object.values(data.data.techRoot.company)) {
+        temp.push(Object.keys(key)[0]);
+    };
+
+
+    return temp;
+}
+
+export { valuesExtractor, namesExtractor, locationExtractor, companyExtractor };

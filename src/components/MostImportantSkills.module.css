@@ -16,4 +16,6 @@
 .skillsList{
     font-size: larger;
     font-weight: bold;
+    overflow: auto;
+    max-height: 45vh;
 }
